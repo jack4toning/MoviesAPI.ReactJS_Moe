@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 322px;
+        height: 455px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="input" type="number" />
+    <button id="button">Click me!</button>
+    <img id="image" src="" />
+    <input type="text" oninput="value=value.replace(/^0+|[^\d]+/g,'')" />
+  </body>
+  <script>
+    let inputEl = document.getElementById('input');
+    let buttonEl = document.getElementById('button');
+    let imgEl = document.getElementById('image');
+
+    inputEl.addEventListener('input', e => {
+      console.log(e.target.value, `type: ${typeof e.target.value}`);
+    });
+
+    buttonEl.addEventListener('click', () => {
+      inputEl.value = null;
+      imgEl.src = null;
+    });
+  </script>
+</html>

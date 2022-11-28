@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // fetch('./movies.json')
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     let movies = data;
+
+    //     const invalidUrl = [];
+    //     const invalidTitle = [];
+    //     const promises = [];
+
+    //     movies.forEach(movie => {
+    //       const imgUrl = movie.poster_path;
+    //       const title = movie.title;
+    //       const p = new Promise((res, rej) => {
+    //         const img = new Image();
+    //         img.src = imgUrl;
+    //         img.onload = () => {
+    //           res();
+    //         };
+    //         img.onerror = () => {
+    //           rej([imgUrl, title]);
+    //         };
+    //       }).catch(([imgUrl, title]) => {
+    //         invalidUrl.push(imgUrl);
+    //         invalidTitle.push(title);
+    //       });
+    //       promises.push(p);
+    //     });
+
+    //     console.log(invalidUrl);
+    //     console.log(invalidTitle);
+
+    //     return { promises, invalidUrl, invalidTitle };
+    //   })
+    //   .then(({ promises, invalidUrl, invalidTitle }) => {
+    //     Promise.allSettled(promises).then(() => {
+    //       console.log(`url:${invalidUrl}`);
+    //       console.log(`title:${invalidTitle}`);
+    //     });
+    //   });
+  </script>
+</html>
